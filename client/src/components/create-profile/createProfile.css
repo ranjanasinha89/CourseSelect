@@ -1,0 +1,11 @@
+.contianer {
+    min-width: 275px;
+    max-width: 275px;
+    min-height: 100%;
+    background: rgb(1, 4, 14);
+    color: #fff;
+    transition: all 0.3s;
+    margin-top: -50px !important;
+    margin-left: -215px !important;
+    margin-bottom: 0px !important;
+}

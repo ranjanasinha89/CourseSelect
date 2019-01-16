@@ -1,0 +1,73 @@
+
+/*
+body {
+  padding: 100px;
+  margin-top: 50px;
+}
+*/
+
+.spacer{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+.container-flex {
+  display: flex;
+  flex-flow: row wrap;
+  width: 45%;
+
+}
+.container-flex .dock {
+  flex: 1 100%;
+  transition: flex 0.5s ease 0s;
+  width: 45%;
+}
+.container-flex .dock > * {
+  opacity: 1;
+  transition: opacity 0.5s ease 0.5s;
+
+}
+.container-flex .dock.dock-header {
+  order: 0;
+}
+
+
+.container-flex .dock.dock-left  {
+  flex: 1 40%;
+  width: 45%;
+}
+.container-flex .dock.dock-right {
+  flex: 1 25%;
+  width: 45%;
+}
+
+
+.container-flex .dock.dock-left {
+  order: 1;
+
+}
+.container-flex .dock.dock-center {
+  flex: 1 auto;
+  order: 2;
+
+}
+.container-flex .dock.dock-right {
+  order: 3 ;
+
+}
+
+.container-flex .dock.shrink {
+  flex: 0 1 0px;
+  transition: flex 0.5s ease 0s;
+
+}
+.container-flex .dock.shrink > * {
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+
+}
+
+.container-flex > .dock > * {
+  margin: 5px;
+}
